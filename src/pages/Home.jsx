@@ -4,51 +4,51 @@ const animations = [
   {
     title: "GSAP To",
     description:
-      "The to() method is used to animate a single element from a starting state to an ending state.",
+      "המתודה to() משמשת כדי להנפיש אלמנט ממצב התחלתי למצב סופי.",
     path: "/gsapto",
   },
   {
     title: "GSAP From",
     description:
-      "The from() method is used to animate a single element from an ending state to a starting state.",
+      "המתודה from() משמשת כדי להנפיש אלמנט ממצב סופי למצב התחלתי.",
     path: "/gsapfrom",
   },
   {
     title: "GSAP FromTo",
     description:
-      "The fromTo() method is used to animate a single element from a starting state to an ending state and vice versa.",
+      "המתודה fromTo() משמשת כדי להנפיש אלמנט ממצב התחלתי למצב סופי ולהיפך.",
     path: "/gsapfromto",
   },
   {
     title: "GSAP Timeline",
     description:
-      "The timeline() method is used to create a timeline to manage multiple animations.",
+      "המתודה timeline() משמשת כדי ליצור ציר זמן לניהול מספר אנימציות.",
     path: "/gsaptimeline",
   },
   {
     title: "GSAP Stagger",
     description:
-      "The stagger() method is used to animate multiple elements with a stagger effect.",
+      "המתודה stagger() משמשת כדי להנפיש מספר אלמנטים עם אפקט הדרגתי.",
     path: "/gsapstagger",
   },
   {
     title: "GSAP ScrollTrigger",
     description:
-      "The ScrollTrigger plugin is used to trigger animations based on the scroll position.",
+      "תוסף ScrollTrigger משמש כדי להפעיל אנימציות בהתאם למיקום הגלילה.",
     path: "/gsapscrolltrigger",
   },
   {
     title: "GSAP Text",
-    description: "Learn how to animate text with GSAP.",
+    description: "למד איך להנפיש טקסט באמצעות GSAP.",
     path: "/gsaptext",
   },
 ];
 
 const Home = () => {
   return (
-    <main className="container">
+    <main className="container" dir="rtl">
       <div className="flex flex-col">
-        <h1 className="text-3xl font-bold text-zinc-50">GSAP Animations</h1>
+        <h1 className="text-3xl font-bold text-zinc-50">אנימציות GSAP</h1>
         <ol className="flex flex-col mt-10">
           {animations.map((animation, index) => (
             <li
@@ -71,7 +71,7 @@ const Home = () => {
               </div>
 
               <svg
-                className="size-6 text-gray-600 -rotate-90"
+                className="size-6 text-gray-600 rotate-90" // התאמת הכיוון
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
